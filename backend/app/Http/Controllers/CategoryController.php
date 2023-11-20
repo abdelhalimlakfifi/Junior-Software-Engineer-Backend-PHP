@@ -10,7 +10,17 @@ class CategoryController extends Controller
     public function index()
     {
 
+        try {
+            //code...
+            $categories = Category::with('children')->get();
 
+            return response()->json($categories, 201);
+        } catch (\Throwable $th) {
+            //throw $th;
+            throw $th;
+
+            abort(500);
+        }
         return ["hey"];
     }
 
