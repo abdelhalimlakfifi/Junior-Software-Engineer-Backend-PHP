@@ -5,7 +5,9 @@ import Header from './components/Header.vue';
 
 <template>
     <div class=" m-10">
-        <Header />
+        <Router-link to="/">
+            <Header />
+        </Router-link>
     </div>
 
     <div class="w-full flex justify-center">
