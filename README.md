@@ -21,25 +21,27 @@ Before you begin, ensure you have the following installed:
 1. **Environment Setup:**
    - Copy the `.env.example` file to `.env` in the `backend` folder.
    - Update the `.env` file with your database connection details.
-
-2. **Database Migration:**
+   - 
+2. **Install Dependencies:**
+   - Run the following command to install PHP dependencies:
+     ```bash
+     composer install
+     ```
+     
+3. **Database Migration:**
    - Run the following commands to migrate the database:
      ```bash
      cd backend
      php artisan migrate
      ```
 
-3. **Storage Link:**
+4. **Storage Link:**
    - Run the following command to create a symbolic link to the storage directory:
      ```bash
      php artisan storage:link
      ```
 
-4. **Install Dependencies:**
-   - Run the following command to install PHP dependencies:
-     ```bash
-     composer install
-     ```
+
 
 ### Frontend
 
