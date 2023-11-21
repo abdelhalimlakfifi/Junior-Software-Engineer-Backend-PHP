@@ -25,13 +25,14 @@ Before you begin, ensure you have the following installed:
 2. **Install Dependencies:**
    - Run the following command to install PHP dependencies:
      ```bash
+     cd backend
      composer install
      ```
      
 3. **Database Migration:**
    - Run the following commands to migrate the database:
      ```bash
-     cd backend
+     
      php artisan migrate
      ```
 
