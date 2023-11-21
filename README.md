@@ -61,7 +61,7 @@ Before you begin, ensure you have the following installed:
   ```bash
   php artisan serve
 
-  ### Backend
+### Frontend
 
 - Run the following command to start the Vue.js development server:
   ```bash
