@@ -17,7 +17,7 @@
         </select>
 
         <!-- Sort options -->
-        <div class="flex space-x-2">
+        <div class="flex flex-col md:flex-row space-x-2">
             <label>Sort By:</label>
             <select v-model="filters.sortField" class="p-2 border border-gray-300 rounded-lg">
                 <option value="name">Name</option>
@@ -32,7 +32,7 @@
         </div>
 
         <!-- Display filtered and sorted products -->
-        <div v-if="!isLoading" class="grid grid-cols-4 w-full gap-5">
+        <div v-if="!isLoading" class="grid grid-cols-2 md:grid-cols-4 w-full gap-5">
             <div v-for="product in filteredProducts" :key="product.id"
                 class="mx-auto mt-11 transform overflow-hidden rounded-lg bg-white shadow-md duration-300 hover:scale-105 hover:shadow-lg">
                 <img class="h-48 w-full object-fit object-center" :src="'http://'+product.image"
