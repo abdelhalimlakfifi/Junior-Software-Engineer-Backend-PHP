@@ -18,17 +18,16 @@ Before you begin, ensure you have the following installed:
 
 ### Backend
 
-1. **Environment Setup:**
-   - Copy the `.env.example` file to `.env` in the `backend` folder.
-   - Update the `.env` file with your database connection details.
-   - 
-2. **Install Dependencies:**
+
+1. **Install Dependencies:**
    - Run the following command to install PHP dependencies:
      ```bash
      cd backend
      composer install
      ```
-     
+2. **Environment Setup:**
+   - Copy the `.env.example` file to `.env` in the `backend` folder.
+   - Update the `.env` file with your database connection details.
 3. **Database Migration:**
    - Run the following commands to migrate the database:
      ```bash
